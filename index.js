@@ -29,7 +29,7 @@ app.post("/api/v1", (req, res) => {
     //   console.log('headers:', res.headers);
   });
   request.on("socket", (s) => {
-    s.setTimeout(5000, () => {
+    s.setTimeout(2000, () => {
       s.destroy();
     });
   });
